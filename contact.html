@@ -11,6 +11,7 @@
     <script type="text/javascript">
        (function(){
           emailjs.init("user_goK3YO8xYPQ6W3SNbm4p0");
+          emailjs.send("service_616bzzc","template_qklheci");
           })();
 </script>
 </head>
@@ -45,7 +46,7 @@
         <h4> If you'd like more information, leave your details below and one of our team will get back to you shortly</h4>
     </div>
     <div class="container-fluid">
-        <form class="contact-us">
+        <form onsubmit="return sendMail(this);" method="POST" class="contact-us">
             <div class="form-group">
                 <label for="fname"> Name : </label>
                 <input type="text" class="form-control" id="fname">
@@ -80,6 +81,7 @@
         </div>
     </div>
 </footer>
+<script src="assets/js/sendEmail.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>
