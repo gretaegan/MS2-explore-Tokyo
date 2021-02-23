@@ -26,5 +26,9 @@
 }
 
 .explore-btn {
-    border: solid 2px;
+    border: solid white 2px;
+    background-color: transparent;
+    color: white;
 }
+
+/*----------------------Footer-----*/
