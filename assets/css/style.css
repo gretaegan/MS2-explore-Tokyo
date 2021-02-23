@@ -1,0 +1,30 @@
+
+/*----------------------Hero image section-----*/
+
+.hero-img {
+    background-image: url("../images/tokyostreet.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-width: 100%;
+    position: relative;
+}
+
+.hero-text-box {
+    color: #fafafa;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-left: 30%;
+    margin-top: 35%;
+    height: 50%;
+}
+
+.hero-hdg {
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+
+.explore-btn {
+    border: solid 2px;
+}
