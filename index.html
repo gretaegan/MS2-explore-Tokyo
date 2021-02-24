@@ -23,7 +23,7 @@
                       <a href="#" class="nav-link">When to Visit</a>
                   </li>
                    <li class="nav-item">
-                       <a href="#" class="nav-link">Where to Go</a>
+                       <a href="#wheretogo" class="nav-link">Where to Go</a>
                    </li>
                     <li class="nav-item">
                         <a href="contact.html" target="_blank" class="nav-link">Contact Us</a>
@@ -48,8 +48,47 @@
 </section>
 
 <!-----------------------Where to Go section--------->
-<section>
- Where to go section 
+<section id="wheretogo">
+    <div class="container">
+        <h1> Where to Visit ? </h1>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <h2> Shinjuku </h2>
+                <img src="assets/images/shinjuku.jpg" alt="shinjuku" class="img-fluid">
+                <div class="city-card">
+                    <p id="shinjuku-para" style="display: none"> Shinjuku is the nightlife capital of Tokyo. Known for its bright, neon lights,
+                        Shinjuku is home to thousands of bars and restaurants. Some mega-clubs and some only big enough
+                        for a handful of patrons. This exciting mini-city has something for everyone.
+                    </p>
+                    <button class="btn btn-info">Shinjuku</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h2> Asakusa </h2>
+                <img src="assets/images/asakusa.jpg" alt="asakusa" class="img-fluid">
+                <div class="city-card">
+                    <p id="asakusa-para" style="display: none"> Home to the magnificent Senso-Ji temple, Asakusa is a neighbourhood 
+                    that's full of traditional Japanese style. Situated in Taito, Asakusa is the place to go for traditional Japanese food. </p>
+                </div>
+                <button class="btn btn-info"> Asakusa</button>
+            </div>
+            <div class="col-sm-4">
+                <h2> Shibuya </h2>
+                <img src="assets/images/shibuya.png" alt="shibuya" class="img-fluid">
+                <div class="city-card">
+                    <p id="shibuya-para" style="display: none"> Shibuya is most widely known for its shopping, Meiji-Jingu shrine and the famous Shibuya
+                    crossing. Stroll down Takeshita street in Harajuku and take in the colourful street style of young Japanese, take a walk through the magnificent gardens
+                    and shrine of Meiji-Jingu or indulge in some of Tokyo's best shopping malls.</p>
+                </div>
+                <button class="btn btn-info"> Shibuya</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="map"></div>
+    </div>
 </section>
 
 <!-------------------Footer----------------->
@@ -70,6 +109,9 @@
         </div>
     </div>
 </footer>
+<script src="assets/js/map.js"></script>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsJfQa0ismTDhS1OlN2pd0jud9Dy65zVE&callback=initMap&libraries=&v=weekly" async ></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>
