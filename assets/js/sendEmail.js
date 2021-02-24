@@ -1,16 +1,14 @@
+var formParams = {
+    name: 'Greta Egan',
+    emailaddress: 'greta.egan@gmail.com',
+    notes: 'I want to explore Tokyo!'
+};
+
 function sendMail(contactForm){
-    emailjs.send("service_616bzzc","template_fjsz4rl", {
-        "from_name": contactForm.name.value,
-        "from_email": contactForm.emailaddress.value,
-        "project_request": contactForm.projectsummary.value
-    })
-    .then(
-        function(response) {
-            console.log("SUCCESS", response);
-        },
-        function(error) {
-            console.log("FAILED", error);
-        }
-    );
-    return false;
-    }
+    emailjs.send("service_616bzzc","tokyo", formParams)
+.then(function(response){
+    console.log('SUCCESS!', response);
+}, function(error){
+    console.log('Failed...', error);
+});
+}
